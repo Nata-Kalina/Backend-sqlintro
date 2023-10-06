@@ -1,11 +1,11 @@
 (1) Using the Customer Table, select the CustomerName, ContactName, and Country.  Use ORDER BY to order by Country.  
 Use LIMIT and OFFSET to get entries 11 through 20. Paste your SQL statement below. 
 
-SELECT CustomerName, ContactName, Country FROM Customer ORDER BY Country ASC LIMIT 20 OFFSET 10;
+SELECT CustomerName, ContactName, Country FROM Customers ORDER BY Country ASC LIMIT 20 OFFSET 10;
 
-(2) Select all columns from the Customer table where the ContactName starts with A.  Paste your SQL statement below.
+(2) Select all columns from the Customers table where the ContactName starts with A.  Paste your SQL statement below.
 
-SELECT * FROM Customer WHERE  ContactName LIKE "A%";
+SELECT * FROM Customers WHERE  ContactName LIKE "A%";
 
 (3) Select all columns from the OrderDetails table where the ProductID is 51 and the quantity is greater than 10.
 Paste your SQL statement below.
@@ -22,4 +22,4 @@ INSERT INTO Products (ProductID, ProductName, SupplierID, CategoryID, Unit, Pric
 UPDATE Products SET price = price + 1.50 WHERE ProductID < 3;
 
 (6) Delete all rows of the Products Table where the price is less than 7.00. Paste your SQL statement below.
-DELETE * FROM Products WHERE price < 7.00;
+DELETE FROM Products WHERE price < 7.00;
